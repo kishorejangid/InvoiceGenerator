@@ -50,8 +50,8 @@ public class InvoiceGenerator {
             drawSingleRowTable(invoiceInfoData, 230, 680, 110, 20, 5, 10);
 
             LinkedHashMap<String, String> siteData = new LinkedHashMap<>();
-            siteData.put("SITE GLN", "9377778794884");
-            siteData.put("SITE NAME", "BP Ashfield COM - Sample");
+            siteData.put("SITE GLN", "564649831219");
+            siteData.put("SITE NAME", "Test Site Sample");
             siteData.put("PO NUMBER", "100500");
             siteData.put("PARTNER VAT NUMBER", "");
             drawSingleRowTable(siteData, 40, 620, 130, 20, 5, 10);
@@ -176,7 +176,7 @@ public class InvoiceGenerator {
         contents.setNonStrokingColor(Color.BLACK);
         contents.setFont(PDType1Font.HELVETICA, 18);
         contents.newLineAtOffset(40, 770);
-        contents.showText("LD&D Australia Pty Limited");
+        contents.showText("Test Company");
         contents.endText();
 
         contents.beginText();
